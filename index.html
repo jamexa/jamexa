@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAMEXA | Excel • Virtual Admin • Office Support</title>
+<meta name="description" content="JAMEXA provides professional Excel, virtual administration, office support, logistics and business operations services.">
+<style>
+:root{
+  --ink:#172033; --muted:#667085; --paper:#f7f8fb; --white:#fff;
+  --accent:#5b5bd6; --accent2:#7b61ff; --line:#e7e9f0; --soft:#eeefff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.25rem;font-weight:900;letter-spacing:.12em}.logo span{color:var(--accent)}
+.links{display:flex;gap:26px;font-size:.92rem;font-weight:650;color:#475467}
+.links a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:750;border:1px solid transparent;cursor:pointer}
+.btn.primary{background:var(--ink);color:#fff}.btn.primary:hover{background:var(--accent)}
+.btn.secondary{border-color:var(--line);background:#fff}
+.hero{background:linear-gradient(135deg,#f7f7ff 0%,#fff 55%,#f6f8fc 100%);padding:92px 0 85px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.eyebrow{display:inline-block;color:var(--accent);font-weight:800;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:15px}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.03;letter-spacing:-.055em;margin:0 0 24px}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 16px}
+h3{margin:0 0 9px;font-size:1.1rem}
+.lead{font-size:1.16rem;color:#536070;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 25px 70px rgba(31,36,55,.10)}
+.hero-card .mini{font-size:.82rem;color:var(--muted);font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+.metric{display:flex;justify-content:space-between;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}
+.metric:last-child{border:0}.metric b{font-size:1rem}.metric span{color:var(--muted);text-align:right}
+section{padding:88px 0}.soft{background:var(--paper)}
+.section-head{max-width:720px;margin-bottom:38px}.section-head p{color:var(--muted);font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;padding:27px;background:#fff}
+.card .num{color:var(--accent);font-weight:900;font-size:.82rem;letter-spacing:.1em;margin-bottom:20px}
+.card p,.card li{color:var(--muted);font-size:.95rem}
+.card ul{padding-left:19px;margin-bottom:0}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.quote{border-left:4px solid var(--accent);padding-left:22px;font-size:1.2rem;font-weight:700}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
+.skill{padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:.86rem;font-weight:650}
+.portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{min-height:220px;border-radius:20px;background:linear-gradient(145deg,#f0f0ff,#fff);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:flex-end}
+.project p{color:var(--muted);margin-bottom:0}
+.process{counter-reset:item}.process .card{position:relative}.process .num{font-size:2rem}
+.cta{background:var(--ink);color:#fff;border-radius:28px;padding:55px}
+.cta p{color:#c7ccd8;max-width:650px}.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px}
+form{display:grid;gap:14px}input,textarea,select{width:100%;border:1px solid var(--line);border-radius:11px;padding:14px;font:inherit;background:#fff}textarea{min-height:150px;resize:vertical}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){
+ .links{display:none}.hero-grid,.about,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}
+ .hero{padding:65px 0}.cta{padding:35px 25px}section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#top">JAM<span>EXA</span></a>
+    <div class="links">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#process">How It Works</a>
+    </div>
+    <a class="btn primary" href="#contact">Let's Work Together</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Excel • Virtual Admin • Office Support</div>
+      <h1>Reliable business support, without the busywork.</h1>
+      <p class="lead">JAMEXA helps businesses stay organized through practical administrative, Excel, customer service, logistics and operations support.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Request a Consultation</a>
+        <a class="btn secondary" href="#services">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="mini">What I can help with</div>
+      <div class="metric"><b>Excel & Reporting</b><span>Track • organize • analyze</span></div>
+      <div class="metric"><b>Administration</b><span>Email • documents • data</span></div>
+      <div class="metric"><b>Operations</b><span>Coordination • follow-up</span></div>
+      <div class="metric"><b>Logistics</b><span>Shipping • status • customers</span></div>
+      <div class="metric"><b>HR Support</b><span>Records • reports • admin</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Services</div>
+      <h2>Support that keeps work moving.</h2>
+      <p>Flexible business support for owners and teams who need reliable help with the details behind day-to-day operations.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="num">01</div><h3>Excel & Data</h3><p>Turn scattered information into organized, useful spreadsheets and reports.</p><ul><li>Trackers & templates</li><li>Pivot tables</li><li>Data cleanup</li><li>Reporting & dashboards</li></ul></div>
+      <div class="card"><div class="num">02</div><h3>Virtual Administration</h3><p>Practical support for the tasks that consume your team's time.</p><ul><li>Email support</li><li>Document preparation</li><li>Data entry</li><li>File organization</li></ul></div>
+      <div class="card"><div class="num">03</div><h3>Operations Support</h3><p>Help coordinate information, people and follow-ups so nothing gets missed.</p><ul><li>Status monitoring</li><li>Customer follow-up</li><li>Process organization</li><li>Administrative coordination</li></ul></div>
+      <div class="card"><div class="num">04</div><h3>Logistics Support</h3><p>Keep orders and shipments organized from request through delivery.</p><ul><li>Shipment tracking</li><li>Shipping documentation</li><li>Customer communication</li><li>Local & international coordination</li></ul></div>
+      <div class="card"><div class="num">05</div><h3>HR Administration</h3><p>Organized administrative support for everyday HR-related work.</p><ul><li>Records organization</li><li>HRIS/data updates</li><li>Onboarding administration</li><li>Reports & documentation</li></ul></div>
+      <div class="card"><div class="num">06</div><h3>Customer & Office Support</h3><p>Professional communication and back-office assistance that keeps customers and teams informed.</p><ul><li>Customer service</li><li>Order coordination</li><li>Purchasing support</li><li>General office operations</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="soft">
+  <div class="container about">
+    <div>
+      <div class="eyebrow">About JAMEXA</div>
+      <h2>Professional, organized, hands-on.</h2>
+      <p class="quote">“I don't just complete tasks — I help organize the work behind the business.”</p>
+    </div>
+    <div>
+      <p>JAMEXA is built around practical business support: administration, Excel and reporting, customer service, logistics, purchasing, HR administration and day-to-day operations.</p>
+      <p>With an academic background in HR Development Management and hands-on experience across office and warehouse environments, the focus is simple: keep information accurate, communication clear and operations moving.</p>
+      <div class="skills">
+        <span class="skill">Microsoft Excel</span><span class="skill">Microsoft Word</span><span class="skill">Outlook</span><span class="skill">HRIS</span><span class="skill">Basic SQL</span><span class="skill">Tableau</span><span class="skill">Customer Service</span><span class="skill">Logistics</span><span class="skill">Purchasing</span><span class="skill">Operations</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Sample Portfolio</div>
+      <h2>Show, don't just tell.</h2>
+      <p>These are ideal portfolio pieces to demonstrate capability without exposing any client information.</p>
+    </div>
+    <div class="portfolio">
+      <div class="project"><h3>Operations Dashboard</h3><p>Monthly KPIs, workload tracking and status summaries built in Excel.</p></div>
+      <div class="project"><h3>Shipment Tracker</h3><p>Order, carrier, tracking, delivery and follow-up status in one organized view.</p></div>
+      <div class="project"><h3>Employee Tracker</h3><p>Fictional employee records, onboarding milestones and administrative status.</p></div>
+      <div class="project"><h3>Customer Follow-Up System</h3><p>Simple workflow for inquiries, orders, follow-ups and completed actions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="soft">
+  <div class="container process">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>Simple from start to finish.</h2>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="num">01</div><h3>Tell me what you need</h3><p>Share the task, problem or process you want organized.</p></div>
+      <div class="card"><div class="num">02</div><h3>We define the scope</h3><p>We'll identify deliverables, timing and the best way to handle the work.</p></div>
+      <div class="card"><div class="num">03</div><h3>Work gets organized</h3><p>You receive clear, practical support designed around your workflow.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta">
+      <div class="contact">
+        <div>
+          <div class="eyebrow" style="color:#b7b4ff">Let's Work Together</div>
+          <h2>Have a task that's taking too much of your time?</h2>
+          <p>Tell me what you're working on. Whether it's an Excel project, administrative workload, customer follow-up or logistics process, let's discuss how I can help.</p>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Thanks! Please connect this form to your preferred email service before publishing.');">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <select><option>What do you need help with?</option><option>Excel & Reporting</option><option>Virtual Administration</option><option>Operations</option><option>Logistics</option><option>HR Administration</option><option>Customer & Office Support</option></select>
+          <textarea placeholder="Tell me briefly about your project"></textarea>
+          <button class="btn primary" style="background:#fff;color:#172033">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 JAMEXA. Excel • Virtual Admin • Office Support.</div></footer>
+</body>
+</html>
